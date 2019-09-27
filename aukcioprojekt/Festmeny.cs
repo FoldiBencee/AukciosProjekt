@@ -6,10 +6,10 @@ using System.Text;
 using System.Linq;
 namespace aukcioprojekt
 {
-    public class Festmeny
+     class Festmeny
     {
-        public Festmeny()
-        { 
+
+
         private string stilus;
         private string cim;
         private string festo;
@@ -20,7 +20,7 @@ namespace aukcioprojekt
         DateTime most = DateTime.Now;
 
 
-
+    
         public string Cim { get => cim; set => cim = value; }
         public string Festo { get => festo; set => festo = value; }
         public string Stilus { get => stilus; set => stilus = value; }
@@ -28,7 +28,7 @@ namespace aukcioprojekt
         public int LegmagasabbLicit { get => legmagasabbLicit; set => legmagasabbLicit = value; }
         public bool Elkelt { get => elkelt; set => elkelt = value; }
         public DateTime LegutolsoLicitIdeje1 { get => LegutolsoLicitIdeje; set => LegutolsoLicitIdeje = value; }
-
+    
         public override string ToString()
         {
             return festo + ": " + cim + "(" + stilus + "\n)"+ " meg ki ir sokmindent";
@@ -77,4 +77,3 @@ namespace aukcioprojekt
 
     }
     }
-}
